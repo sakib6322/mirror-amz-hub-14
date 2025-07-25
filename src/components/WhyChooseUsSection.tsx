@@ -7,25 +7,45 @@ export const WhyChooseUsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-lg font-semibold text-primary mb-4">Why Choose Us?</h3>
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-black">
-            Elevate Your E-commerce Game with AMZ Solutions Hub
-          </h2>
+            <h2
+              className="text-4xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x drop-shadow-lg transition-transform duration-500 hover:scale-105"
+              style={{
+              backgroundSize: '200% 200%',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              filter: 'brightness(1.15) drop-shadow(0 2px 16px rgba(136,58,255,0.25))',
+              letterSpacing: '0.02em',
+              }}
+            >
+              Elevate Your E-commerce Game with AMZ Solutions Hub
+            </h2>
+            <style>
+              {`
+              @keyframes gradient-x {
+                0%, 100% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+              }
+              .animate-gradient-x {
+                animation: gradient-x 4s ease-in-out infinite;
+              }
+              `}
+            </style>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-8">
             <Card className="bg-white border-blue-400 shadow-xl hover:shadow-2xl transition-all duration-500 animate-fade-in-up group hover:scale-105 hover:-translate-y-2 transform-gpu">
               <CardContent className="p-6 transition-all duration-500">
-                <h4 className="text-xl font-semibold text-white mb-4">
+                <h4 className="text-xl font-semibold text-black mb-4">
                   Revolutionizing Your E-Commerce Journey
                 </h4>
-                <p className="text-gray-100 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   At AMZ Solutions Hub, we're dedicated to taking your e-commerce journey to new heights. We've pioneered seamless automation in the digital marketplace, and our passionate team of experts specializes in crafting cutting-edge automation solutions that are meticulously tailored for Amazon, Walmart, and Shopify platforms. Our ultimate goal is to empower businesses of all sizes, making their digital marketplace journey effortless and triumphant.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-tr from-red-100 via-black-100 to-white-100 border border-blue-400 shadow-md hover:shadow-lg transition-all duration-300">
+            <Card className="bg-white border border-blue-400 shadow-xl hover:shadow-2xl transition-all duration-300 animate-fade-in hover:scale-105 hover:translated0y-2 transform-gpu">
               <CardContent className="p-6">
                 <h4 className="text-xl text-black font-semibold text mb-4">
                   A Personalized Approach - Our Key Differentiator
@@ -36,9 +56,9 @@ export const WhyChooseUsSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white border border-blue-400 shadow-md hover:shadow-lg transition-all duration-300">
+            <Card className="bg-white border border-blue-400 shadow-xl hover:shadow-2xl transition-all duration-300 animate-fade-in hover:scale-105 hover:translated0y-2 transform-gpu">
               <CardContent className="p-6">
-                <h4 className="text-xl text-black font-semibold text-foreground mb-4">
+                <h4 className="text-xl text-black font-semibold mb-4">
                   Join Us on a Journey of Unparalleled Success
                 </h4>
                 <p className="text-muted-foreground leading-relaxed mb-6">
