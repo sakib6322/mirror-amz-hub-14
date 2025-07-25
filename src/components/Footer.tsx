@@ -1,8 +1,13 @@
 import logo from '@/assets/logo.png';
 
 export const Footer = () => {
-  return (
-    <footer className="bg-primary py-12 animate-fade-in">
+  return (  
+    <footer
+      className="py-12 animate-fade-in"
+      style={{
+      background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Company Info */}
@@ -51,12 +56,14 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-white/80">
-            © 2024 RR AMZ - Rayhan Redwan. All rights reserved.
-          </p>
-        </div>
+      <div className="border-t border-white/20 mt-8 pt-8 text-center">
+        <p className="text-white/80">
+        © 2025 RR AMZ - Rayhan Redwan. All rights reserved.
+        </p>
+      </div>
       </div>
     </footer>
   );
 };
+
+

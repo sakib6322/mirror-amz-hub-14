@@ -3,55 +3,60 @@ import { Card, CardContent } from '@/components/ui/card';
 
 export const WhyChooseUsSection = () => {
   return (
-    <section id="about" className="py-20 bg-white animate-fade-in">
+    <section id="about" className="py-20 bg-white text-black animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-lg font-semibold text-primary mb-4">Why Choose Us?</h3>
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8 text-black">
             Elevate Your E-commerce Game with AMZ Solutions Hub
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-8">
-            <div>
-              <h4 className="text-xl font-semibold text-foreground mb-4">
-                Revolutionizing Your E-Commerce Journey
-              </h4>
-              <p className="text-muted-foreground leading-relaxed">
-                At AMZ Solutions Hub, we're dedicated to taking your e-commerce journey to new heights. We've pioneered seamless automation in the digital marketplace, and our passionate team of experts specializes in crafting cutting-edge automation solutions that are meticulously tailored for Amazon, Walmart, and Shopify platforms. Our ultimate goal is to empower businesses of all sizes, making their digital marketplace journey effortless and triumphant.
-              </p>
-            </div>
+            <Card className="bg-gradient-to-tr from-red-100 via-white-100 to-white-100 border-none shadow-xl hover:shadow-2xl transition-all duration-500 animate-fade-in-up group hover:scale-105 hover:-translate-y-2 transform-gpu">
+              <CardContent className="p-6 transition-all duration-500">
+                <h4 className="text-xl font-semibold text-white mb-4">
+                  Revolutionizing Your E-Commerce Journey
+                </h4>
+                <p className="text-gray-100 leading-relaxed">
+                  At AMZ Solutions Hub, we're dedicated to taking your e-commerce journey to new heights. We've pioneered seamless automation in the digital marketplace, and our passionate team of experts specializes in crafting cutting-edge automation solutions that are meticulously tailored for Amazon, Walmart, and Shopify platforms. Our ultimate goal is to empower businesses of all sizes, making their digital marketplace journey effortless and triumphant.
+                </p>
+              </CardContent>
+            </Card>
 
-            <div>
-              <h4 className="text-xl font-semibold text-foreground mb-4">
-                A Personalized Approach - Our Key Differentiator
-              </h4>
-              <p className="text-muted-foreground leading-relaxed">
-                What truly sets us apart is our commitment to providing a personalized touch to every client. We believe in forging enduring relationships founded on trust, transparency, and tangible results. Our commitment goes beyond automation; we deliver tailored solutions meticulously aligned with your unique business objectives.
-              </p>
-            </div>
+            <Card className="bg-gradient-to-tr from-red-100 via-black-100 to-white-100 border border-blue-400 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
+                <h4 className="text-xl text-black font-semibold text mb-4">
+                  A Personalized Approach - Our Key Differentiator
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  What truly sets us apart is our commitment to providing a personalized touch to every client. We believe in forging enduring relationships founded on trust, transparency, and tangible results. Our commitment goes beyond automation; we deliver tailored solutions meticulously aligned with your unique business objectives.
+                </p>
+              </CardContent>
+            </Card>
 
-            <div>
-              <h4 className="text-xl font-semibold text-foreground mb-4">
-                Join Us on a Journey of Unparalleled Success
-              </h4>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Together, let's embark on a transformative journey where automation, efficiency, and success converge. Experience the future of e-commerce today with AMZ Solutions Hub.
-              </p>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Learn More
-              </Button>
-            </div>
+            <Card className="bg-white border border-blue-400 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6">
+                <h4 className="text-xl text-black font-semibold text-foreground mb-4">
+                  Join Us on a Journey of Unparalleled Success
+                </h4>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Together, let's embark on a transformative journey where automation, efficiency, and success converge. Experience the future of e-commerce today with AMZ Solutions Hub.
+                </p>
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
           </div>
-
           <div className="grid grid-cols-1 gap-6">
             <Card className="bg-card border-border hover:border-primary/50 transition-colors">
               <CardContent className="p-6">
                 <h4 className="text-lg font-semibold text-foreground mb-3">
                   Experience Counts - Expertise You Can Trust
                 </h4>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-sm transition-colors duration-300 group-hover:text-primary-foreground">
                   With a wealth of experience in the e-commerce industry, we bring unparalleled expertise to the table. Our proficiency in automating Amazon, Walmart, and Shopify processes spans years, ensuring that your operations run seamlessly and efficiently.
                 </p>
               </CardContent>
