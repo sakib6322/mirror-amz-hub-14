@@ -14,7 +14,7 @@ export const WhyChooseUsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-8">
-            <Card className="bg-gradient-to-tr from-red-100 via-white-100 to-white-100 border-none shadow-xl hover:shadow-2xl transition-all duration-500 animate-fade-in-up group hover:scale-105 hover:-translate-y-2 transform-gpu">
+            <Card className="bg-white border-blue-400 shadow-xl hover:shadow-2xl transition-all duration-500 animate-fade-in-up group hover:scale-105 hover:-translate-y-2 transform-gpu">
               <CardContent className="p-6 transition-all duration-500">
                 <h4 className="text-xl font-semibold text-white mb-4">
                   Revolutionizing Your E-Commerce Journey
