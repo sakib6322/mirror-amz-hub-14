@@ -70,9 +70,29 @@ export const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-lg font-semibold text-primary mb-4">Your Amazon Marketing Company</h3>
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8">
-            Elevate Your E-Commerce Business with AMZ Solutions Hub
-          </h2>
+           <h2
+              className="text-4xl sm:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x drop-shadow-lg transition-transform duration-500 hover:scale-105"
+              style={{
+              backgroundSize: '200% 200%',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              filter: 'brightness(1.15) drop-shadow(0 2px 16px rgba(136,58,255,0.25))',
+              letterSpacing: '0.02em',
+              }}
+            >
+              Elevate Your E-commerce Bussiness with AMZ Solutions Hub
+            </h2>
+            <style>
+              {`
+              @keyframes gradient-x {
+                0%, 100% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+              }
+              .animate-gradient-x {
+                animation: gradient-x 4s ease-in-out infinite;
+              }
+              `}
+            </style>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             At AMZ Solutions Hub, we're not just leaders; we're trailblazers in the world of e-commerce. Our dedicated team of experts has mastered the art of providing cutting-edge automation solutions meticulously designed for the Amazon, Walmart, and Shopify platforms.
           </p>
