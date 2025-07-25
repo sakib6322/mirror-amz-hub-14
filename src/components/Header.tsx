@@ -1,25 +1,25 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    { name: "Amazon Wholesale FBA", href: "#amazon-fba" },
-    { name: "Amazon Private Label", href: "#private-label" },
-    { name: "Shopify Dropshipping", href: "#shopify" },
-    { name: "Facebook Marketplace", href: "#facebook" },
-    { name: "Virtual Assistants", href: "#virtual-assistants" },
-    { name: "Walmart Automation", href: "#walmart" },
-    { name: "TikTok Shop", href: "#tiktok" },
-    { name: "Etsy", href: "#etsy" },
-    { name: "eBay", href: "#ebay" },
-    { name: "Proxy Marketing", href: "#proxy" },
-    { name: "Account Reinstatement", href: "#reinstatement" },
-    { name: "Ecom Private Label", href: "#ecom-label" }
+    { name: "Amazon Wholesale FBA", href: "/services/amazon-fba" },
+    { name: "Amazon Private Label", href: "/services/private-label" },
+    { name: "Shopify Dropshipping", href: "/services/shopify" },
+    { name: "Facebook Marketplace", href: "/services/facebook" },
+    { name: "Virtual Assistants", href: "/services/virtual-assistants" },
+    { name: "Walmart Automation", href: "/services/walmart" },
+    { name: "TikTok Shop", href: "/services/tiktok" },
+    { name: "Etsy", href: "/services/etsy" },
+    { name: "eBay", href: "/services/ebay" },
+    { name: "Proxy Marketing", href: "/services/proxy" },
+    { name: "Account Reinstatement", href: "/services/reinstatement" },
+    { name: "Ecom Private Label", href: "/services/ecom-label" }
   ];
 
   const handleCallNow = () => {
@@ -42,9 +42,9 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <img src={logo} alt="AMZ Solutions Hub" className="h-10 w-auto" />
-          </div>
+          <Link to="/" className="flex items-center">
+            <span className="text-2xl font-bold text-primary">RR AMZ</span>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -73,13 +73,13 @@ export const Header = () => {
               <div className={`absolute top-full left-0 mt-2 w-64 bg-popover border border-border rounded-lg shadow-lg transition-all duration-200 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
                 <div className="p-2">
                   {services.map((service, index) => (
-                    <button
+                    <Link
                       key={index}
-                      onClick={() => scrollToSection(service.href)}
-                      className="block w-full text-left px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-primary rounded-md transition-colors"
+                      to={service.href}
+                      className="block w-full text-left px-3 py-2 text-sm text-foreground hover:bg-accent hover:text-white rounded-md transition-colors"
                     >
                       {service.name}
-                    </button>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -142,13 +142,14 @@ export const Header = () => {
                 <span className="text-foreground font-medium">SERVICES</span>
                 <div className="mt-2 space-y-1 ml-4">
                   {services.slice(0, 6).map((service, index) => (
-                    <button
+                    <Link
                       key={index}
-                      onClick={() => { scrollToSection(service.href); setIsMobileMenuOpen(false); }}
+                      to={service.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className="block w-full text-left text-sm text-muted-foreground hover:text-primary"
                     >
                       {service.name}
-                    </button>
+                    </Link>
                   ))}
                 </div>
               </div>

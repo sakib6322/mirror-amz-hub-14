@@ -26,7 +26,7 @@ const processes = [
 
 export const ProcessSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white animate-slide-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8">
@@ -56,7 +56,19 @@ export const ProcessSection = () => {
 
         {/* Services Marquee */}
         <div className="mt-16 overflow-hidden">
-          <div className="flex animate-pulse space-x-8 text-2xl font-bold text-primary/60">
+          <div className="flex animate-marquee space-x-8 text-2xl font-bold text-primary/60 whitespace-nowrap">
+            <span>Amazon</span>
+            <span>⭐</span>
+            <span>Walmart</span>
+            <span>⭐</span>
+            <span>Shopify</span>
+            <span>⭐</span>
+            <span>Dropshipping</span>
+            <span>⭐</span>
+            <span>Automation</span>
+            <span>⭐</span>
+            <span>Product Hunting</span>
+            <span>⭐</span>
             <span>Amazon</span>
             <span>⭐</span>
             <span>Walmart</span>

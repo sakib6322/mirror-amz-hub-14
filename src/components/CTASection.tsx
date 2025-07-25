@@ -11,7 +11,7 @@ export const CTASection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-primary/10">
+    <section id="contact" className="py-20 bg-white animate-fade-in">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
           Explore Our Services in Depth! Have More Queries?

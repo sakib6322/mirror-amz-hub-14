@@ -66,7 +66,7 @@ const services = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 bg-secondary/30">
+    <section id="services" className="py-20 bg-white animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-lg font-semibold text-primary mb-4">Your Amazon Marketing Company</h3>
