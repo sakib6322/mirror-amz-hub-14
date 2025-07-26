@@ -13,7 +13,7 @@ export const CTASection = () => {
   return (
     <section id="contact" className="py-20 bg-white animate-fade-in">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+        <h2 className="text-4xl sm:text-5xl font-bold text-black mb-6">
           Explore Our Services in Depth! Have More Queries?
         </h2>
         <p className="text-xl text-muted-foreground mb-12">
@@ -21,7 +21,7 @@ export const CTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <Button 
+          <Button
             size="lg" 
             className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold"
             onClick={handleCallNow}

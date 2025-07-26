@@ -24,7 +24,7 @@ export const TestimonialsSection = () => {
     <section className="py-20 bg-white animate-slide-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8">
+          <h2 className="text-4xl sm:text-5xl font-bold text-black mb-8">
             What Clients Say About Us
           </h2>
         </div>
@@ -59,7 +59,7 @@ export const TestimonialsSection = () => {
 
         {/* Company Info Section */}
         <div className="mt-20 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-8">
+          <h2 className="text-4xl sm:text-5xl font-bold text-black mb-8">
             Full Service Account Management On Amazon & Beyond
           </h2>
           <div className="max-w-4xl mx-auto">
