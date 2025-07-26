@@ -2,24 +2,25 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { slugify } from '@/lib/utils';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    { name: "Amazon Wholesale FBA", href: "/services/amazon-fba" },
-    { name: "Amazon Private Label", href: "/services/private-label" },
-    { name: "Shopify Dropshipping", href: "/services/shopify" },
-    { name: "Facebook Marketplace", href: "/services/facebook" },
-    { name: "Virtual Assistants", href: "/services/virtual-assistants" },
-    { name: "Walmart Automation", href: "/services/walmart" },
-    { name: "TikTok Shop", href: "/services/tiktok" },
-    { name: "Etsy", href: "/services/etsy" },
-    { name: "eBay", href: "/services/ebay" },
-    { name: "Proxy Marketing", href: "/services/proxy" },
-    { name: "Account Reinstatement", href: "/services/reinstatement" },
-    { name: "Ecom Private Label", href: "/services/ecom-label" }
+    { name: "Amazon Wholesale FBA", href: `/services/${slugify("Amazon Wholesale FBA")}` },
+    { name: "Amazon Private Label", href: `/services/${slugify("Amazon Private Label")}` },
+    { name: "Shopify Dropshipping", href: `/services/${slugify("Shopify Dropshipping")}` },
+    { name: "Facebook Marketplace", href: `/services/${slugify("Facebook Marketplace")}` },
+    { name: "Virtual Assistants", href: `/services/${slugify("Virtual Assistants")}` },
+    { name: "Walmart Automation", href: `/services/${slugify("Walmart Automation")}` },
+    { name: "TikTok Shop", href: `/services/${slugify("TikTok Shop")}` },
+    { name: "Etsy", href: `/services/${slugify("Etsy")}` },
+    { name: "eBay", href: `/services/${slugify("eBay")}` },
+    { name: "Proxy Marketing", href: `/services/${slugify("Proxy Marketing")}` },
+    { name: "Account Reinstatement", href: `/services/${slugify("Account Reinstatement")}` },
+    { name: "Ecom Private Label", href: `/services/${slugify("Ecom Private Label")}` }
   ];
 
   const handleCallNow = () => {
@@ -141,7 +142,7 @@ export const Header = () => {
               <div className="px-3 py-2">
                 <span className="text-foreground font-medium">SERVICES</span>
                 <div className="mt-2 space-y-1 ml-4">
-                  {services.slice(0, 6).map((service, index) => (
+                  {services.map((service, index) => (
                     <Link
                       key={index}
                       to={service.href}
