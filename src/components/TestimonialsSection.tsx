@@ -19,6 +19,8 @@ const testimonials = [
   }
 ];
 
+
+
 export const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-white animate-slide-in">

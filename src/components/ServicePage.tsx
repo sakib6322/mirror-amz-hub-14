@@ -2,9 +2,10 @@ import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowLeft, Phone, MessageCircle } from 'lucide-react';
+import { slugify } from '@/lib/utils';
 
 const serviceDetails = {
-  'amazon-fba': {
+  [slugify('Amazon Wholesale FBA')]: {
     title: 'Amazon Wholesale FBA',
     description: 'Leverage the power of Amazon FBA to boost your online sales to the fullest extent.',
     features: [
@@ -21,7 +22,7 @@ const serviceDetails = {
       'Amazon customer service'
     ]
   },
-  'private-label': {
+  [slugify('Amazon Private Label')]: {
     title: 'Amazon Private Label',
     description: 'Build your brand with our comprehensive private label solutions on Amazon.',
     features: [
@@ -38,7 +39,7 @@ const serviceDetails = {
       'Long-term value creation'
     ]
   },
-  'shopify': {
+  [slugify('Shopify Dropshipping')]: {
     title: 'Shopify Dropshipping',
     description: 'Our Shopify Dropshipping services provide you with the necessary tools and support.',
     features: [
@@ -55,7 +56,7 @@ const serviceDetails = {
       'Scalable business model'
     ]
   },
-  'facebook': {
+  [slugify('Facebook Marketplace')]: {
     title: 'Facebook Marketplace',
     description: 'Expand your reach with our Facebook Marketplace optimization services.',
     features: [
@@ -72,7 +73,7 @@ const serviceDetails = {
       'Social commerce integration'
     ]
   },
-  'virtual-assistants': {
+  [slugify('Virtual Assistants')]: {
     title: 'Virtual Assistants',
     description: 'Professional virtual assistants to handle your e-commerce operations.',
     features: [
@@ -89,7 +90,7 @@ const serviceDetails = {
       'Skilled professionals'
     ]
   },
-  'walmart': {
+  [slugify('Walmart Automation')]: {
     title: 'Walmart Automation',
     description: 'Dive into our Walmart Dropshipping program, meticulously crafted by RR AMZ.',
     features: [
@@ -106,7 +107,7 @@ const serviceDetails = {
       'Automated operations'
     ]
   },
-  'tiktok': {
+  [slugify('TikTok Shop')]: {
     title: 'TikTok Shop',
     description: 'Maximize your presence on TikTok Shop with our expert strategies.',
     features: [
@@ -123,7 +124,7 @@ const serviceDetails = {
       'High engagement rates'
     ]
   },
-  'etsy': {
+  [slugify('Etsy')]: {
     title: 'Etsy',
     description: 'Grow your Etsy store with our specialized optimization techniques.',
     features: [
@@ -140,7 +141,7 @@ const serviceDetails = {
       'Global reach'
     ]
   },
-  'ebay': {
+  [slugify('eBay')]: {
     title: 'eBay',
     description: 'Scale your eBay business with our proven automation solutions.',
     features: [
@@ -157,7 +158,7 @@ const serviceDetails = {
       'Flexible selling options'
     ]
   },
-  'proxy': {
+  [slugify('Proxy Marketing')]: {
     title: 'Proxy Marketing',
     description: 'Advanced proxy marketing solutions for your e-commerce growth.',
     features: [
@@ -174,7 +175,7 @@ const serviceDetails = {
       'Competitive advantage'
     ]
   },
-  'reinstatement': {
+  [slugify('Account Reinstatement')]: {
     title: 'Account Reinstatement',
     description: 'Expert account reinstatement services for suspended marketplaces.',
     features: [
@@ -191,7 +192,7 @@ const serviceDetails = {
       'Future protection'
     ]
   },
-  'ecom-label': {
+  [slugify('Ecom Private Label')]: {
     title: 'Ecom Private Label',
     description: 'Comprehensive private label solutions across multiple platforms.',
     features: [

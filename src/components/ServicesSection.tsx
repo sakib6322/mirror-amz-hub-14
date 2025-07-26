@@ -1,66 +1,68 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { slugify } from '@/lib/utils';
 
 const services = [
   {
     title: "Amazon Wholesale FBA",
     description: "Leverage the power of Amazon FBA to boost your online sales to the fullest extent.",
-    link: "#"
+    link: `/services/${slugify("Amazon Wholesale FBA")}`
   },
   {
     title: "Amazon Private Label",
     description: "Build your brand with our comprehensive private label solutions on Amazon.",
-    link: "#"
+    link: `/services/${slugify("Amazon Private Label")}`
   },
   {
     title: "Shopify Dropshipping",
     description: "Our Shopify Dropshipping services provide you with the necessary tools and support.",
-    link: "#"
+    link: `/services/${slugify("Shopify Dropshipping")}`
   },
   {
     title: "Facebook Marketplace",
     description: "Expand your reach with our Facebook Marketplace optimization services.",
-    link: "#"
+    link: `/services/${slugify("Facebook Marketplace")}`
   },
   {
     title: "Virtual Assistants",
     description: "Professional virtual assistants to handle your e-commerce operations.",
-    link: "#"
+    link: `/services/${slugify("Virtual Assistants")}`
   },
   {
     title: "Walmart Automation",
     description: "Dive into our Walmart Dropshipping program, meticulously crafted by AMZ Solutions Hub.",
-    link: "#"
+    link: `/services/${slugify("Walmart Automation")}`
   },
   {
     title: "TikTok Shop",
     description: "Maximize your presence on TikTok Shop with our expert strategies.",
-    link: "#"
+    link: `/services/${slugify("TikTok Shop")}`
   },
   {
     title: "Etsy",
     description: "Grow your Etsy store with our specialized optimization techniques.",
-    link: "#"
+    link: `/services/${slugify("Etsy")}`
   },
   {
     title: "eBay",
     description: "Scale your eBay business with our proven automation solutions.",
-    link: "#"
+    link: `/services/${slugify("eBay")}`
   },
   {
     title: "Proxy Marketing",
     description: "Advanced proxy marketing solutions for your e-commerce growth.",
-    link: "#"
+    link: `/services/${slugify("Proxy Marketing")}`
   },
   {
     title: "Account Reinstatement",
     description: "Expert account reinstatement services for suspended marketplaces.",
-    link: "#"
+    link: `/services/${slugify("Account Reinstatement")}`
   },
   {
     title: "Ecom Private Label",
     description: "Comprehensive private label solutions across multiple platforms.",
-    link: "#"
+    link: `/services/${slugify("Ecom Private Label")}`
   }
 ];
 
@@ -100,19 +102,21 @@ export const ServicesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer">
-              <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                </div>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
+            <Link key={index} to={service.link} className="w-full">
+              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-4">
+                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                  </div>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 
@@ -139,4 +143,4 @@ export const ServicesSection = () => {
       </div>
     </section>
   );
-};
+}; 
