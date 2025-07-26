@@ -36,7 +36,7 @@ export const ProcessSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {processes.map((process, index) => (
-            <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300 group">
+            <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300 group shadow-md hover:shadow-lg hover:scale-105 ease-in-out">
               <CardContent className="p-8 text-center">
                 <div className="mb-6 flex justify-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">

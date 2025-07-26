@@ -295,7 +295,7 @@ export const ServicePage = () => {
                 </h2>
                 <div className="space-y-4">
                   {service.benefits.map((benefit, index) => (
-                    <Card key={index} className="group hover:border-primary/50 transition-all duration-300">
+                    <Card key={index} className="group hover:border-primary/50 transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 ease-in-out">
                       <CardContent className="p-4">
                         <p className="text-muted-foreground group-hover:text-primary transition-colors">
                           {benefit}

@@ -103,7 +103,7 @@ export const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Link key={index} to={service.link} className="w-full">
-              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer">
+              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-lg hover:scale-105 ease-in-out">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
