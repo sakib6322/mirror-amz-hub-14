@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowLeft, Phone, MessageCircle } from 'lucide-react';
 import { slugify } from '@/lib/utils';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
 const serviceDetails = {
   [slugify('Amazon Wholesale FBA')]: {
@@ -239,26 +241,7 @@ export const ServicePage = () => {
   return (
    
     <div className="min-h-screen bg-white animate-fade-in">
-      {/* Header */}
-    
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Link to="/" className="flex items-center space-x-2">
-              <ArrowLeft className="w-5 h-5" />
-              <span className="font-bold text-xl">RR AMZ</span>
-            </Link>
-            <div className="flex items-center space-x-4">
-              <Button variant="outline" onClick={handleGetQuote}>
-                GET QUOTE
-              </Button>
-              <Button onClick={handleCallNow}>
-                CALL NOW
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="pt-20">
@@ -285,15 +268,6 @@ export const ServicePage = () => {
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Get Started
               </Button>
-              {/* <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary"
-                onClick={handleCallNow}
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Call +880 1758-536719
-              </Button> */}
             </div>
           </div>
         </section>
@@ -363,6 +337,7 @@ export const ServicePage = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
