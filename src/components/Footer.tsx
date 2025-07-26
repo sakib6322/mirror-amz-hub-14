@@ -1,7 +1,8 @@
 import logo from '@/assets/logo.png';
+import { FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 export const Footer = () => {
-  return (  
+  return (
     <footer
       className="py-12 animate-fade-in"
       style={{
@@ -53,6 +54,37 @@ export const Footer = () => {
                 </a>
               </p>
             </div>
+            <div>
+              <p className="text-white/80">
+                <a href="mailto:itworksolutionbd@gmail.com" className="hover:text-white transition-colors">
+                 <span>Email:</span> itworksolutionbd@gmail.com
+                </a>
+              </p>
+            </div>
+            
+
+            {/* Social Media */}
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.facebook.com/share/1C3fz1HPeW/?mibextid=qi2Omg" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white/80 hover:text-white transition-colors"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook className="h-6 w-6" />
+                </a>
+                <a 
+                  href="mailto:itworksolutionbd@gmail.com" 
+                  className="text-white/80 hover:text-white transition-colors"
+                  aria-label="Email"
+                >
+                  <FaEnvelope className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -65,5 +97,8 @@ export const Footer = () => {
     </footer>
   );
 };
+
+
+
 
 
