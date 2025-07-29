@@ -3,6 +3,10 @@ import { ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { slugify } from '@/lib/utils';
 
+
+
+
+
 const services = [
   {
     title: "Amazon Wholesale FBA",
@@ -131,7 +135,7 @@ export const ServicesSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button 
               className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-              onClick={() => window.open('https://wa.me/8801758536719?text=Hi Rayhan, I would like to get a quote for your services.', '_blank')}
+              onClick={() => window.open('https://wa.me/8801758536719?text=Hi, I would like to get a quote for your services.', '_blank')}
             >
               Get a Quote
             </button>
