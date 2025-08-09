@@ -90,7 +90,7 @@ export const Footer = () => {
 
       <div className="border-t border-white/20 mt-8 pt-8 text-center">
         <p className="text-white/80">
-        © 2025 RR AMZ - Rayhan Redwan. All rights reserved.
+        © 2025 Raihan AMZ - Rayhan Redwan. All rights reserved.
         </p>
       </div>
       </div>
