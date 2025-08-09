@@ -49,12 +49,18 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <Link 
+              to="/"
+              className="text-foreground hover:text-primary transition-colors"
+            >
             <button 
               onClick={() => scrollToSection('#hero')} 
               className="text-foreground hover:text-primary transition-colors"
             >
               HOME
             </button>
+            </Link>
+            
             <button 
               onClick={() => scrollToSection('#about')} 
               className="text-foreground hover:text-primary transition-colors"
