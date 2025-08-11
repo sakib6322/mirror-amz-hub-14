@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ShoppingBag, Package, Store, Facebook, Users, Target, Clock, Star, ArrowRight, ShieldCheck, Tag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { slugify } from '@/lib/utils';
 
@@ -11,61 +11,85 @@ const services = [
   {
     title: "Amazon Wholesale FBA",
     description: "Leverage the power of Amazon FBA to boost your online sales to the fullest extent.",
+    detailedDescription: "Comprehensive Amazon FBA wholesale solutions including product sourcing, inventory management, listing optimization, and profit maximization strategies. We handle everything from supplier relations to sales analytics.",
+    icon: Package,
     link: `/services/${slugify("Amazon Wholesale FBA")}`
   },
   {
     title: "Amazon Private Label",
     description: "Build your brand with our comprehensive private label solutions on Amazon.",
+    detailedDescription: "Complete private label development from product research and design to branding, manufacturing partnerships, and market launch. Build a sustainable Amazon business with your own branded products.",
+    icon: Tag,
     link: `/services/${slugify("Amazon Private Label")}`
   },
   {
     title: "Shopify Dropshipping",
     description: "Our Shopify Dropshipping services provide you with the necessary tools and support.",
+    detailedDescription: "End-to-end Shopify store development with automated dropshipping systems. Includes product research, store design, payment integration, order fulfillment automation, and conversion optimization.",
+    icon: Store,
     link: `/services/${slugify("Shopify Dropshipping")}`
   },
   {
     title: "Facebook Marketplace",
     description: "Expand your reach with our Facebook Marketplace optimization services.",
+    detailedDescription: "Strategic Facebook Marketplace management including listing optimization, audience targeting, automated responses, inventory synchronization, and performance analytics to maximize your sales reach.",
+    icon: Facebook,
     link: `/services/${slugify("Facebook Marketplace")}`
   },
   {
     title: "Virtual Assistants",
     description: "Professional virtual assistants to handle your e-commerce operations.",
+    detailedDescription: "Dedicated e-commerce virtual assistants trained in Amazon, Shopify, and marketplace management. Services include customer service, inventory management, listing optimization, and administrative tasks.",
+    icon: Users,
     link: `/services/${slugify("Virtual Assistants")}`
   },
   {
     title: "Walmart Automation",
-    description: "Dive into our Walmart Dropshipping program, meticulously crafted by AMZ Solutions Hub.",
+    description: "Dive into our Walmart Dropshipping program, meticulously crafted by Asin Authority.",
+    detailedDescription: "Complete Walmart marketplace automation with advanced dropshipping systems. Includes product research, competitive analysis, automated pricing, inventory sync, and order management for maximum profitability.",
+    icon: ShoppingBag,
     link: `/services/${slugify("Walmart Automation")}`
   },
   {
     title: "TikTok Shop",
     description: "Maximize your presence on TikTok Shop with our expert strategies.",
+    detailedDescription: "TikTok Shop optimization and management including viral product identification, content strategy, influencer partnerships, automated order processing, and performance tracking for social commerce success.",
+    icon: Target,
     link: `/services/${slugify("TikTok Shop")}`
   },
   {
     title: "Etsy",
     description: "Grow your Etsy store with our specialized optimization techniques.",
+    detailedDescription: "Etsy store growth strategies including SEO optimization, product photography guidance, seasonal trend analysis, competitor research, and listing enhancement for increased visibility and sales.",
+    icon: Star,
     link: `/services/${slugify("Etsy")}`
   },
   {
     title: "eBay",
     description: "Scale your eBay business with our proven automation solutions.",
+    detailedDescription: "eBay automation and scaling solutions with advanced repricing tools, inventory management, automated customer service, feedback management, and multi-channel integration capabilities.",
+    icon: Clock,
     link: `/services/${slugify("eBay")}`
   },
   {
     title: "Proxy Marketing",
     description: "Advanced proxy marketing solutions for your e-commerce growth.",
+    detailedDescription: "Professional proxy management and marketing automation for multi-account operations, geographic expansion, competitive research, and secure marketplace access across global platforms.",
+    icon: ShieldCheck,
     link: `/services/${slugify("Proxy Marketing")}`
   },
   {
     title: "Account Reinstatement",
     description: "Expert account reinstatement services for suspended marketplaces.",
+    detailedDescription: "Professional account recovery services for Amazon, eBay, and other marketplaces. Includes violation analysis, appeal preparation, documentation support, and ongoing compliance consulting.",
+    icon: ArrowRight,
     link: `/services/${slugify("Account Reinstatement")}`
   },
   {
     title: "Ecom Private Label",
     description: "Comprehensive private label solutions across multiple platforms.",
+    detailedDescription: "Multi-platform private label development spanning Amazon, Shopify, Walmart, and more. Complete product lifecycle management from conception to market dominance with brand building expertise.",
+    icon: Package,
     link: `/services/${slugify("Ecom Private Label")}`
   }
 ];
@@ -86,7 +110,7 @@ export const ServicesSection = () => {
               letterSpacing: '0.02em',
               }}
             >
-              Elevate Your E-commerce Bussiness with AMZ Solutions Hub
+              Elevate Your E-commerce Business with Asin Authority
             </h2>
             <style>
               {`
@@ -100,24 +124,43 @@ export const ServicesSection = () => {
               `}
             </style>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-            At AMZ Solutions Hub, we're not just leaders; we're trailblazers in the world of e-commerce. Our dedicated team of experts has mastered the art of providing cutting-edge automation solutions meticulously designed for the Amazon, Walmart, and Shopify platforms.
+            At Asin Authority, we're not just leaders; we're trailblazers in the world of e-commerce. Our dedicated team of experts has mastered the art of providing cutting-edge automation solutions meticulously designed for the Amazon, Walmart, and Shopify platforms.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Link key={index} to={service.link} className="w-full">
-              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-lg hover:scale-105 ease-in-out">
-                <CardContent className="p-6">
+              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-500 group cursor-pointer shadow-md hover:shadow-2xl relative overflow-hidden perspective-1000">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-6 relative z-10 transform-gpu transition-all duration-500 group-hover:scale-105">
                   <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                    <div className="flex items-center gap-3">
+                      <service.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-all duration-300 group-hover:rotate-12" />
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {service.description}
-                  </p>
+                  
+                  {/* Default Description */}
+                  <div className="group-hover:opacity-0 group-hover:scale-95 transition-all duration-300">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                  
+                  {/* Hover Content */}
+                  <div className="absolute inset-6 opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 delay-100 bg-card/95 backdrop-blur-sm rounded-lg p-4 flex flex-col justify-center">
+                    <p className="text-sm text-foreground leading-relaxed mb-3">
+                      {service.detailedDescription}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-primary font-semibold">Learn More</span>
+                      <ArrowRight className="w-4 h-4 text-primary animate-pulse" />
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </Link>

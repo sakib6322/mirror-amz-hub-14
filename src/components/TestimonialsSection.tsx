@@ -4,17 +4,17 @@ import { Star } from 'lucide-react';
 const testimonials = [
   {
     name: "Samantha Mitchell",
-    content: "I can't emphasize enough how fortunate I feel to have discovered AMZ Solutions Hub. Their Amazon marketing services are truly the best in the industry, and their team is outstanding. They've certainly earned my trust, and I'll be a returning client for sure!",
+    content: "I can't emphasize enough how fortunate I feel to have discovered Asin Authority. Their Amazon marketing services are truly the best in the industry, and their team is outstanding. They've certainly earned my trust, and I'll be a returning client for sure!",
     rating: 5
   },
   {
     name: "Daniel Reynolds",
-    content: "AMZ Solutions Hub provided me with exceptional e-commerce services when it came to creating my online store. Their team was highly professional and attentive to my needs. If you're in search of top-notch Shopify, Amazon, or Walmart services, I wholeheartedly recommend them",
+    content: "Asin Authority provided me with exceptional e-commerce services when it came to creating my online store. Their team was highly professional and attentive to my needs. If you're in search of top-notch Shopify, Amazon, or Walmart services, I wholeheartedly recommend them",
     rating: 5
   },
   {
     name: "Emily Turner",
-    content: "I've had the pleasure of working with the AMZ Solutions Hub team, and I can confidently say they are the go-to experts for all things related to digital marketing and Dropshipping. Their professionalism and creative approach set them apart from the rest.",
+    content: "I've had the pleasure of working with the Asin Authority team, and I can confidently say they are the go-to experts for all things related to digital marketing and Dropshipping. Their professionalism and creative approach set them apart from the rest.",
     rating: 5
   }
 ];

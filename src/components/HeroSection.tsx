@@ -3,6 +3,7 @@ import heroBackground from '@/assets/hero-bg.png';
 import shopifyIcon from '@/assets/shopify-icon.png';
 import walmartIcon from '@/assets/walmart-icon.png';
 import amazonIcon from '@/assets/amazon-icon.png';
+import asinAuthorityLogo from '@/assets/asin-authority-logo.png';
 
 export const HeroSection = () => {
   return (
@@ -21,13 +22,16 @@ export const HeroSection = () => {
       
       {/* Floating Icons */}
       <div className="absolute top-1/4 left-1/4 animate-float">
-        <img src={shopifyIcon} alt="Shopify" className="w-16 h-16 opacity-80" />
+        <img src={shopifyIcon} alt="Shopify" className="w-16 h-16 opacity-60" />
       </div>
       <div className="absolute top-1/3 right-1/4 animate-float" style={{ animationDelay: '2s' }}>
-        <img src={walmartIcon} alt="Walmart" className="w-16 h-16 opacity-80" />
+        <img src={walmartIcon} alt="Walmart" className="w-16 h-16 opacity-60" />
       </div>
       <div className="absolute bottom-1/4 right-1/3 animate-float" style={{ animationDelay: '4s' }}>
-        <img src={amazonIcon} alt="Amazon" className="w-16 h-16 opacity-80" />
+        <img src={amazonIcon} alt="Amazon" className="w-16 h-16 opacity-60" />
+      </div>
+      <div className="absolute top-1/2 left-1/6 animate-float" style={{ animationDelay: '1s' }}>
+        <img src={asinAuthorityLogo} alt="Asin Authority" className="w-20 h-12 opacity-30" />
       </div>
 
       {/* Content */}

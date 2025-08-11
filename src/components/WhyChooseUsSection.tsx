@@ -17,7 +17,7 @@ export const WhyChooseUsSection = () => {
               letterSpacing: '0.02em',
               }}
             >
-              Elevate Your E-commerce Game with AMZ Solutions Hub
+              Elevate Your E-commerce Game with Asin Authority
             </h2>
             <style>
               {`
@@ -40,7 +40,7 @@ export const WhyChooseUsSection = () => {
                   Revolutionizing Your E-Commerce Journey
                 </h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  At AMZ Solutions Hub, we're dedicated to taking your e-commerce journey to new heights. We've pioneered seamless automation in the digital marketplace, and our passionate team of experts specializes in crafting cutting-edge automation solutions that are meticulously tailored for Amazon, Walmart, and Shopify platforms. Our ultimate goal is to empower businesses of all sizes, making their digital marketplace journey effortless and triumphant.
+                  At Asin Authority, we're dedicated to taking your e-commerce journey to new heights. We've pioneered seamless automation in the digital marketplace, and our passionate team of experts specializes in crafting cutting-edge automation solutions that are meticulously tailored for Amazon, Walmart, and Shopify platforms. Our ultimate goal is to empower businesses of all sizes, making their digital marketplace journey effortless and triumphant.
                 </p>
               </CardContent>
             </Card>
@@ -62,7 +62,7 @@ export const WhyChooseUsSection = () => {
                   Join Us on a Journey of Unparalleled Success
                 </h4>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Together, let's embark on a transformative journey where automation, efficiency, and success converge. Experience the future of e-commerce today with AMZ Solutions Hub.
+                  Together, let's embark on a transformative journey where automation, efficiency, and success converge. Experience the future of e-commerce today with Asin Authority.
                 </p>
                 <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   Learn More

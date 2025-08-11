@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { slugify } from '@/lib/utils';
+import asinAuthorityLogo from '@/assets/asin-authority-logo.png';
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary">RR AMZ</span>
+            <img src={asinAuthorityLogo} alt="Asin Authority" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
