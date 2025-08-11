@@ -4,6 +4,7 @@ import shopifyIcon from '@/assets/shopify-icon.png';
 import walmartIcon from '@/assets/walmart-icon.png';
 import amazonIcon from '@/assets/amazon-icon.png';
 import asinAuthorityLogo from '@/assets/asin-authority-logo.png';
+import shoppingCart from '@/assets/shopping-cart.png';
 
 export const HeroSection = () => {
   return (
@@ -32,6 +33,26 @@ export const HeroSection = () => {
       </div>
       <div className="absolute top-1/2 left-1/6 animate-float" style={{ animationDelay: '1s' }}>
         <img src={asinAuthorityLogo} alt="Asin Authority" className="w-20 h-12 opacity-30" />
+      </div>
+      
+      {/* Border Area Animated Items */}
+      <div className="absolute top-20 left-4 animate-float" style={{ animationDelay: '3s' }}>
+        <img src={shoppingCart} alt="E-commerce" className="w-12 h-12 opacity-40" />
+      </div>
+      <div className="absolute top-32 right-6 animate-float" style={{ animationDelay: '5s' }}>
+        <img src={shopifyIcon} alt="Shopify" className="w-10 h-10 opacity-50" />
+      </div>
+      <div className="absolute bottom-32 left-8 animate-float" style={{ animationDelay: '2.5s' }}>
+        <img src={walmartIcon} alt="Walmart" className="w-14 h-14 opacity-45" />
+      </div>
+      <div className="absolute bottom-20 right-4 animate-float" style={{ animationDelay: '4.5s' }}>
+        <img src={amazonIcon} alt="Amazon" className="w-12 h-12 opacity-50" />
+      </div>
+      <div className="absolute top-60 left-2 animate-float" style={{ animationDelay: '1.5s' }}>
+        <img src={asinAuthorityLogo} alt="Asin Authority" className="w-16 h-10 opacity-35" />
+      </div>
+      <div className="absolute top-80 right-2 animate-float" style={{ animationDelay: '3.5s' }}>
+        <img src={shoppingCart} alt="Shopping" className="w-10 h-10 opacity-35" />
       </div>
 
       {/* Content */}

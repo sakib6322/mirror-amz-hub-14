@@ -131,37 +131,52 @@ export const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Link key={index} to={service.link} className="w-full">
-              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-500 group cursor-pointer shadow-md hover:shadow-2xl relative overflow-hidden perspective-1000">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <CardContent className="p-6 relative z-10 transform-gpu transition-all duration-500 group-hover:scale-105">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <service.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
-                      <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                        {service.title}
-                      </h3>
+              <Card className="bg-card border-border hover:border-primary/50 transition-all duration-700 group cursor-pointer shadow-md hover:shadow-2xl relative overflow-hidden h-48 preserve-3d">
+                {/* Card Front */}
+                <div className="absolute inset-0 w-full h-full backface-hidden transition-transform duration-700 group-hover:rotateY-180">
+                  <CardContent className="p-6 h-full flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center gap-3 mb-4">
+                        <service.icon className="w-8 h-8 text-primary transition-transform duration-300" />
+                        <h3 className="text-lg font-semibold text-foreground">
+                          {service.title}
+                        </h3>
+                      </div>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {service.description}
+                      </p>
                     </div>
-                    <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-all duration-300 group-hover:rotate-12" />
-                  </div>
-                  
-                  {/* Default Description */}
-                  <div className="group-hover:opacity-0 group-hover:scale-95 transition-all duration-300">
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                  
-                  {/* Hover Content */}
-                  <div className="absolute inset-6 opacity-0 scale-105 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 delay-100 bg-card/95 backdrop-blur-sm rounded-lg p-4 flex flex-col justify-center">
-                    <p className="text-sm text-foreground leading-relaxed mb-3">
-                      {service.detailedDescription}
-                    </p>
+                    <div className="flex justify-end">
+                      <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                    </div>
+                  </CardContent>
+                </div>
+                
+                {/* Card Back */}
+                <div className="absolute inset-0 w-full h-full backface-hidden rotateY-180 transition-transform duration-700 group-hover:rotateY-0 bg-gradient-to-br from-primary/10 to-primary/20">
+                  <CardContent className="p-6 h-full flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center gap-3 mb-4">
+                        <service.icon className="w-10 h-10 text-primary" />
+                        <div>
+                          <h3 className="text-lg font-bold text-primary mb-1">
+                            {service.title}
+                          </h3>
+                          <span className="text-xs text-muted-foreground font-medium">
+                            Professional Service
+                          </span>
+                        </div>
+                      </div>
+                      <p className="text-foreground text-sm leading-relaxed mb-4">
+                        {service.detailedDescription}
+                      </p>
+                    </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-primary font-semibold">Learn More</span>
-                      <ArrowRight className="w-4 h-4 text-primary animate-pulse" />
+                      <span className="text-sm text-primary font-bold">Explore Service</span>
+                      <ArrowRight className="w-5 h-5 text-primary animate-pulse" />
                     </div>
-                  </div>
-                </CardContent>
+                  </CardContent>
+                </div>
               </Card>
             </Link>
           ))}

@@ -106,6 +106,9 @@ export default {
 				'slide-in': 'slide-in 0.6s ease-out',
 				'marquee': 'marquee 20s linear infinite',
 				'fade-in': 'fade-in 0.6s ease-out'
+			},
+			perspective: {
+				'1000': '1000px',
 			}
 		}
 	},
