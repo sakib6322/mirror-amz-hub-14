@@ -152,28 +152,24 @@ export const ServicesSection = () => {
                   </CardContent>
                 </div>
                 
-                {/* Card Back */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rotateY-180 transition-transform duration-700 group-hover:rotateY-0 bg-gradient-to-br from-primary/10 to-primary/20">
-                  <CardContent className="p-6 h-full flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center gap-3 mb-4">
-                        <service.icon className="w-10 h-10 text-primary" />
-                        <div>
-                          <h3 className="text-lg font-bold text-primary mb-1">
-                            {service.title}
-                          </h3>
-                          <span className="text-xs text-muted-foreground font-medium">
-                            Professional Service
-                          </span>
-                        </div>
-                      </div>
-                      <p className="text-foreground text-sm leading-relaxed mb-4">
-                        {service.detailedDescription}
+                 {/* Card Back */}
+                <div className="absolute inset-0 w-full h-full backface-hidden rotateY-180 transition-transform duration-700 group-hover:rotateY-0 bg-gradient-to-br from-primary to-primary/80">
+                  <CardContent className="p-6 h-full flex flex-col justify-center items-center text-center">
+                    <div className="mb-4">
+                      <service.icon className="w-16 h-16 text-white mx-auto mb-3 animate-bounce" />
+                      <h3 className="text-xl font-bold text-white mb-2">
+                        {service.title}
+                      </h3>
+                      <span className="text-sm text-white/80 font-medium block mb-3">
+                        Professional Service
+                      </span>
+                      <p className="text-white/90 text-sm leading-relaxed">
+                        {service.detailedDescription.substring(0, 100)}...
                       </p>
                     </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-primary font-bold">Explore Service</span>
-                      <ArrowRight className="w-5 h-5 text-primary animate-pulse" />
+                    <div className="flex items-center gap-2 text-white">
+                      <span className="text-sm font-bold">Learn More</span>
+                      <ArrowRight className="w-4 h-4 animate-pulse" />
                     </div>
                   </CardContent>
                 </div>
